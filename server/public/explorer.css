@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #333;
+  color: #fff;
+  line-height: 1.6;
+}
+
+.slider {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.slide.current {
+  opacity: 1;
+  margin:auto;
+}
+
+.slide .content {
+  position: absolute;
+  top: 50px;
+  left: -600px;
+  opacity: 0;
+  width: 85%;
+  height: 90%;
+  margin:auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #333;
+  padding: 35px;
+}
+
+.login{
+    position: absolute;
+    color:#333;
+    width:200px;
+    padding:10px;
+    border: 4px #fff solid;
+    text-decoration: none;
+    text-align: center;
+    left:900px;
+    bottom: 100px;
+    font-size:1.5rem;
+}
+
+.slide .content h1 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.slide .content h2{
+    margin-top: 15px;
+}
+
+.slide.current .content {
+  opacity: 1;
+  transform: translateX(700px);
+  transition: all 0.7s ease-in-out 0.3s;
+}
+
+.buttons button#next {
+  position: absolute;
+  top: 40%;
+  right: 15px;
+}
+
+.buttons button#prev {
+  position: absolute;
+  top: 40%;
+  left: 15px;
+}
+
+.buttons button {
+  border: 2px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  padding: 13px 15px;
+  border-radius: 50%;
+  outline: none;
+}
+
+.buttons button:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+@media (max-width: 500px) {
+  .slide .content {
+    bottom: -300px;
+    left: 0;
+    width: 100%;
+  }
+
+  .slide.current .content {
+    transform: translateY(-300px);
+  }
+}
+
+
+
+/* Backgorund Images */
+ 
+.slide:first-child {
+  background: url('Images/photo-1472162072942-cd5147eb3902.jpg') no-repeat
+    center top/cover;
+}
+.slide:nth-child(2) {
+  background: url('Images/photo-1478147427282-58a87a120781.jpg') no-repeat
+    center top/cover;
+}
+.slide:nth-child(3) {
+  background: url('Images/photo-1507525428034-b723cf961d3e.jpg') no-repeat
+    center top/cover;
+}
+.slide:nth-child(4) {
+  background: url('Images/photo-1516831972173-00f3d79da863.jpg') no-repeat
+    center top/cover;
+}

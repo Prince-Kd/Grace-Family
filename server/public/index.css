@@ -1,0 +1,153 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+
+body{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #333;
+    height:100vh;
+    /*overflow:hidden;    /*when activated in the absence of .container and 100vh it removes the scrollbar*/
+}   /* when overflow is not activated and container is it leads to two scrollbars being created*/
+
+.container{
+    width:100%;
+    height:100vh;     /* commenting height out causes the smooth scroll-behaviour not to work */
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+nav{
+    width:100%;
+    background:rgba(0, 0, 0, 0.8);
+    position:fixed;
+    top: 0;
+    z-index:1;
+    min-height: 70px;
+}
+
+nav ul{
+    list-style: none;
+    margin-top:20px;
+    text-align: center;
+}
+
+nav li{
+    display:inline;
+    margin-right:30px;
+}
+
+nav a{
+    text-decoration: none;
+    color:#fff;
+    font-size:16px;
+    font-weight: bold;
+}
+
+nav a:hover{
+    color: aqua;
+}
+
+section{
+    scroll-snap-align: center;
+}
+
+#Home-Page{
+    background-image: url("Images/gettyimages-535761281-1024x1024.jpg");
+    background-position: center;
+    height: 100vh;
+    overflow:hidden;
+}
+
+#Home-Page h1{
+    margin-top:120px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#Home-Page p{
+    font-size: 20px;
+    text-align: center;
+}
+
+#About-Page{
+    background-image: url("Images/photo-1466978913421-dad2ebd01d17.jpg");
+    background-position: center;
+    height: 100vh;
+    overflow:hidden;
+    color:#fff;
+}
+
+#About-Page h1{
+    margin-top:120px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#About-Page p{
+    font-size: 20px;
+    text-align: center;
+}
+
+#Services-Page{
+    background-image: url("Images/photo-1506354666786-959d6d497f1a.jpg");
+    background-position: center;
+    height: 100vh;
+    overflow:hidden;
+    color:#fff;
+}
+
+#Services-Page h1{
+    margin-top:120px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#Services-Page p{
+    font-size: 20px;
+    text-align: center;
+}
+
+#Contacts-Page{
+    background-image: url("Images/sunset-962156__340.jpg");
+    background-position: center;
+    height: 100vh;
+    overflow:hidden;
+    color:#fff;
+}
+
+#Contacts-Page h1{
+    margin-top:120px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#contacts-Page p{
+    font-size: 20px;
+    text-align: center;
+}
+
+footer{
+    background-color: #35424a;
+    color: #fff;
+    text-align: center;
+    min-height:100px;
+    overflow: hidden;
+}
+
+footer p{
+    margin-top: 10px;
+}
+
+
+
+
+
+

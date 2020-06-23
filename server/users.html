@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href='/static/form.css'>
+</head>
+<body>
+    <div class="container">
+        <div class="split left">
+          <form class="form-1" action="/api/login" method="POST" >
+              <label class="first">Login Page</label>
+              <label for="username">Username</label>
+              <input name="username" id="username" type="text" placeholder="Username" required>
+              <label for="password">Password</label>
+              <input name="password" id="password" type="password" placeholder="password" required>
+              <input class="button1" type="submit" value="Submit">
+          </form>
+          <a href="index.html" class="button2">Back</a>
+        </div>
+        <div class="split right">
+          <h1 class="A1">Are You New To The System?</h1>
+          <h1 class="A2">Explore The Basic Features Of The System.</h1>
+          <a href="explorer.html" class="button">Explore</a>
+        </div>
+    </div>
+
+    <script src='/static/login.js'></script>
+</body>
+</html>
